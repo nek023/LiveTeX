@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA009F351C6A4E320041EB6C /* FileEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA009F341C6A4E320041EB6C /* FileEventMonitor.swift */; };
+		AA8DBC321C6CDF6100175E2E /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8DBC311C6CDF6100175E2E /* Preferences.storyboard */; };
+		AAEA6F3E1BAFF5D700E5DE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F3D1BAFF5D700E5DE12 /* AppDelegate.swift */; };
+		AAEA6F421BAFF5D700E5DE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA6F411BAFF5D700E5DE12 /* Assets.xcassets */; };
+		AAEA6F451BAFF5D700E5DE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA6F431BAFF5D700E5DE12 /* Main.storyboard */; };
+		AAEA6F501BAFF5D700E5DE12 /* LiveTeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F4F1BAFF5D700E5DE12 /* LiveTeXTests.swift */; };
+		AAEA6F5B1BAFF5D700E5DE12 /* LiveTeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F5A1BAFF5D700E5DE12 /* LiveTeXUITests.swift */; };
+		AAEA6F751BAFF63E00E5DE12 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F6B1BAFF63E00E5DE12 /* PreviewViewController.swift */; };
+		AAEA6F761BAFF63E00E5DE12 /* DocumentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F6C1BAFF63E00E5DE12 /* DocumentWindowController.swift */; };
+		AAEA6F781BAFF63E00E5DE12 /* GeneralPaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F6F1BAFF63E00E5DE12 /* GeneralPaneViewController.swift */; };
+		AAEA6F791BAFF63E00E5DE12 /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F701BAFF63E00E5DE12 /* ConsoleViewController.swift */; };
+		AAEA6F7A1BAFF63E00E5DE12 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F711BAFF63E00E5DE12 /* SplitViewController.swift */; };
+		AAEA6F7B1BAFF63E00E5DE12 /* ScriptPaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F721BAFF63E00E5DE12 /* ScriptPaneViewController.swift */; };
+		AAEA6F7C1BAFF63E00E5DE12 /* ShellScriptOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F731BAFF63E00E5DE12 /* ShellScriptOperation.swift */; };
+		AAEA6F7D1BAFF63E00E5DE12 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA6F741BAFF63E00E5DE12 /* Preferences.swift */; };
+		AAEA6F821BAFF9A000E5DE12 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEA6F811BAFF9A000E5DE12 /* MASShortcut.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAEA6F4C1BAFF5D700E5DE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAEA6F321BAFF5D700E5DE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAEA6F391BAFF5D700E5DE12;
+			remoteInfo = LiveTeX;
+		};
+		AAEA6F571BAFF5D700E5DE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAEA6F321BAFF5D700E5DE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAEA6F391BAFF5D700E5DE12;
+			remoteInfo = LiveTeX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA009F341C6A4E320041EB6C /* FileEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileEventMonitor.swift; sourceTree = "<group>"; };
+		AA504FE91C6B741E001654FA /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		AA504FEB1C6B9F7B001654FA /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		AA8DBC311C6CDF6100175E2E /* Preferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		AAEA6F3A1BAFF5D700E5DE12 /* LiveTeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEA6F3D1BAFF5D700E5DE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAEA6F411BAFF5D700E5DE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAEA6F441BAFF5D700E5DE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAEA6F461BAFF5D700E5DE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEA6F4B1BAFF5D700E5DE12 /* LiveTeXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTeXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEA6F4F1BAFF5D700E5DE12 /* LiveTeXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTeXTests.swift; sourceTree = "<group>"; };
+		AAEA6F511BAFF5D700E5DE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEA6F561BAFF5D700E5DE12 /* LiveTeXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTeXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEA6F5A1BAFF5D700E5DE12 /* LiveTeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTeXUITests.swift; sourceTree = "<group>"; };
+		AAEA6F5C1BAFF5D700E5DE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEA6F6B1BAFF63E00E5DE12 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		AAEA6F6C1BAFF63E00E5DE12 /* DocumentWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentWindowController.swift; sourceTree = "<group>"; };
+		AAEA6F6F1BAFF63E00E5DE12 /* GeneralPaneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPaneViewController.swift; sourceTree = "<group>"; };
+		AAEA6F701BAFF63E00E5DE12 /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		AAEA6F711BAFF63E00E5DE12 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		AAEA6F721BAFF63E00E5DE12 /* ScriptPaneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptPaneViewController.swift; sourceTree = "<group>"; };
+		AAEA6F731BAFF63E00E5DE12 /* ShellScriptOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShellScriptOperation.swift; sourceTree = "<group>"; };
+		AAEA6F741BAFF63E00E5DE12 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		AAEA6F811BAFF9A000E5DE12 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAEA6F371BAFF5D700E5DE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEA6F821BAFF9A000E5DE12 /* MASShortcut.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F481BAFF5D700E5DE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F531BAFF5D700E5DE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA7E0C8A1BCE0F9400C43419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F511BAFF5D700E5DE12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA7E0C8B1BCE0F9600C43419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F5C1BAFF5D700E5DE12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAEA6F311BAFF5D700E5DE12 = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F3C1BAFF5D700E5DE12 /* LiveTeX */,
+				AAEA6F4E1BAFF5D700E5DE12 /* LiveTeXTests */,
+				AAEA6F591BAFF5D700E5DE12 /* LiveTeXUITests */,
+				AAEA6F831BAFF9AD00E5DE12 /* Frameworks */,
+				AAEA6F3B1BAFF5D700E5DE12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAEA6F3B1BAFF5D700E5DE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F3A1BAFF5D700E5DE12 /* LiveTeX.app */,
+				AAEA6F4B1BAFF5D700E5DE12 /* LiveTeXTests.xctest */,
+				AAEA6F561BAFF5D700E5DE12 /* LiveTeXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAEA6F3C1BAFF5D700E5DE12 /* LiveTeX */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F7E1BAFF6F300E5DE12 /* Utilities */,
+				AAEA6F7F1BAFF6FD00E5DE12 /* Controllers */,
+				AAEA6F3D1BAFF5D700E5DE12 /* AppDelegate.swift */,
+				AAEA6F691BAFF5F200E5DE12 /* Resources */,
+				AAEA6F681BAFF5E100E5DE12 /* Supporting Files */,
+			);
+			path = LiveTeX;
+			sourceTree = "<group>";
+		};
+		AAEA6F4E1BAFF5D700E5DE12 /* LiveTeXTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F4F1BAFF5D700E5DE12 /* LiveTeXTests.swift */,
+				AA7E0C8A1BCE0F9400C43419 /* Supporting Files */,
+			);
+			path = LiveTeXTests;
+			sourceTree = "<group>";
+		};
+		AAEA6F591BAFF5D700E5DE12 /* LiveTeXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F5A1BAFF5D700E5DE12 /* LiveTeXUITests.swift */,
+				AA7E0C8B1BCE0F9600C43419 /* Supporting Files */,
+			);
+			path = LiveTeXUITests;
+			sourceTree = "<group>";
+		};
+		AAEA6F681BAFF5E100E5DE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F461BAFF5D700E5DE12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAEA6F691BAFF5F200E5DE12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F411BAFF5D700E5DE12 /* Assets.xcassets */,
+				AAEA6F431BAFF5D700E5DE12 /* Main.storyboard */,
+				AA8DBC311C6CDF6100175E2E /* Preferences.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AAEA6F7E1BAFF6F300E5DE12 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F741BAFF63E00E5DE12 /* Preferences.swift */,
+				AA009F341C6A4E320041EB6C /* FileEventMonitor.swift */,
+				AAEA6F731BAFF63E00E5DE12 /* ShellScriptOperation.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		AAEA6F7F1BAFF6FD00E5DE12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F6C1BAFF63E00E5DE12 /* DocumentWindowController.swift */,
+				AAEA6F711BAFF63E00E5DE12 /* SplitViewController.swift */,
+				AAEA6F6B1BAFF63E00E5DE12 /* PreviewViewController.swift */,
+				AAEA6F701BAFF63E00E5DE12 /* ConsoleViewController.swift */,
+				AAEA6F801BAFF70800E5DE12 /* Preferences */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AAEA6F801BAFF70800E5DE12 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA6F6F1BAFF63E00E5DE12 /* GeneralPaneViewController.swift */,
+				AAEA6F721BAFF63E00E5DE12 /* ScriptPaneViewController.swift */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		AAEA6F831BAFF9AD00E5DE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA504FEB1C6B9F7B001654FA /* CocoaLumberjackSwift.framework */,
+				AA504FE91C6B741E001654FA /* CocoaLumberjack.framework */,
+				AAEA6F811BAFF9A000E5DE12 /* MASShortcut.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAEA6F391BAFF5D700E5DE12 /* LiveTeX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEA6F5F1BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeX" */;
+			buildPhases = (
+				AAEA6F361BAFF5D700E5DE12 /* Sources */,
+				AAEA6F371BAFF5D700E5DE12 /* Frameworks */,
+				AAEA6F381BAFF5D700E5DE12 /* Resources */,
+				AAEA6F841BAFF9C600E5DE12 /* Run Script */,
+				AA54466D1BB04C1E00793896 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveTeX;
+			productName = LiveTeX;
+			productReference = AAEA6F3A1BAFF5D700E5DE12 /* LiveTeX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAEA6F4A1BAFF5D700E5DE12 /* LiveTeXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEA6F621BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeXTests" */;
+			buildPhases = (
+				AAEA6F471BAFF5D700E5DE12 /* Sources */,
+				AAEA6F481BAFF5D700E5DE12 /* Frameworks */,
+				AAEA6F491BAFF5D700E5DE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEA6F4D1BAFF5D700E5DE12 /* PBXTargetDependency */,
+			);
+			name = LiveTeXTests;
+			productName = LiveTeXTests;
+			productReference = AAEA6F4B1BAFF5D700E5DE12 /* LiveTeXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAEA6F551BAFF5D700E5DE12 /* LiveTeXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEA6F651BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeXUITests" */;
+			buildPhases = (
+				AAEA6F521BAFF5D700E5DE12 /* Sources */,
+				AAEA6F531BAFF5D700E5DE12 /* Frameworks */,
+				AAEA6F541BAFF5D700E5DE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEA6F581BAFF5D700E5DE12 /* PBXTargetDependency */,
+			);
+			name = LiveTeXUITests;
+			productName = LiveTeXUITests;
+			productReference = AAEA6F561BAFF5D700E5DE12 /* LiveTeXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAEA6F321BAFF5D700E5DE12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Katsuma Tanaka";
+				TargetAttributes = {
+					AAEA6F391BAFF5D700E5DE12 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 727C3SULLK;
+					};
+					AAEA6F4A1BAFF5D700E5DE12 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = AAEA6F391BAFF5D700E5DE12;
+					};
+					AAEA6F551BAFF5D700E5DE12 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = AAEA6F391BAFF5D700E5DE12;
+					};
+				};
+			};
+			buildConfigurationList = AAEA6F351BAFF5D700E5DE12 /* Build configuration list for PBXProject "LiveTeX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAEA6F311BAFF5D700E5DE12;
+			productRefGroup = AAEA6F3B1BAFF5D700E5DE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAEA6F391BAFF5D700E5DE12 /* LiveTeX */,
+				AAEA6F4A1BAFF5D700E5DE12 /* LiveTeXTests */,
+				AAEA6F551BAFF5D700E5DE12 /* LiveTeXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAEA6F381BAFF5D700E5DE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8DBC321C6CDF6100175E2E /* Preferences.storyboard in Resources */,
+				AAEA6F421BAFF5D700E5DE12 /* Assets.xcassets in Resources */,
+				AAEA6F451BAFF5D700E5DE12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F491BAFF5D700E5DE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F541BAFF5D700E5DE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA54466D1BB04C1E00793896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /usr/local/bin/swiftlint;
+		};
+		AAEA6F841BAFF9C600E5DE12 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/MASShortcut.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAEA6F361BAFF5D700E5DE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEA6F7B1BAFF63E00E5DE12 /* ScriptPaneViewController.swift in Sources */,
+				AAEA6F3E1BAFF5D700E5DE12 /* AppDelegate.swift in Sources */,
+				AAEA6F781BAFF63E00E5DE12 /* GeneralPaneViewController.swift in Sources */,
+				AAEA6F791BAFF63E00E5DE12 /* ConsoleViewController.swift in Sources */,
+				AAEA6F751BAFF63E00E5DE12 /* PreviewViewController.swift in Sources */,
+				AAEA6F7D1BAFF63E00E5DE12 /* Preferences.swift in Sources */,
+				AAEA6F7A1BAFF63E00E5DE12 /* SplitViewController.swift in Sources */,
+				AAEA6F761BAFF63E00E5DE12 /* DocumentWindowController.swift in Sources */,
+				AAEA6F7C1BAFF63E00E5DE12 /* ShellScriptOperation.swift in Sources */,
+				AA009F351C6A4E320041EB6C /* FileEventMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F471BAFF5D700E5DE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEA6F501BAFF5D700E5DE12 /* LiveTeXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEA6F521BAFF5D700E5DE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEA6F5B1BAFF5D700E5DE12 /* LiveTeXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAEA6F4D1BAFF5D700E5DE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAEA6F391BAFF5D700E5DE12 /* LiveTeX */;
+			targetProxy = AAEA6F4C1BAFF5D700E5DE12 /* PBXContainerItemProxy */;
+		};
+		AAEA6F581BAFF5D700E5DE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAEA6F391BAFF5D700E5DE12 /* LiveTeX */;
+			targetProxy = AAEA6F571BAFF5D700E5DE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAEA6F431BAFF5D700E5DE12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEA6F441BAFF5D700E5DE12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAEA6F5D1BAFF5D700E5DE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAEA6F5E1BAFF5D700E5DE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAEA6F601BAFF5D700E5DE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = LiveTeX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAEA6F611BAFF5D700E5DE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = LiveTeX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		AAEA6F631BAFF5D700E5DE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LiveTeXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTeX.app/Contents/MacOS/LiveTeX";
+			};
+			name = Debug;
+		};
+		AAEA6F641BAFF5D700E5DE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LiveTeXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTeX.app/Contents/MacOS/LiveTeX";
+			};
+			name = Release;
+		};
+		AAEA6F661BAFF5D700E5DE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LiveTeXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LiveTeX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AAEA6F671BAFF5D700E5DE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LiveTeXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.questbeat.LiveTeXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LiveTeX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAEA6F351BAFF5D700E5DE12 /* Build configuration list for PBXProject "LiveTeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEA6F5D1BAFF5D700E5DE12 /* Debug */,
+				AAEA6F5E1BAFF5D700E5DE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEA6F5F1BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEA6F601BAFF5D700E5DE12 /* Debug */,
+				AAEA6F611BAFF5D700E5DE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEA6F621BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEA6F631BAFF5D700E5DE12 /* Debug */,
+				AAEA6F641BAFF5D700E5DE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEA6F651BAFF5D700E5DE12 /* Build configuration list for PBXNativeTarget "LiveTeXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEA6F661BAFF5D700E5DE12 /* Debug */,
+				AAEA6F671BAFF5D700E5DE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAEA6F321BAFF5D700E5DE12 /* Project object */;
+}

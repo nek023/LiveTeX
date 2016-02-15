@@ -1,0 +1,16 @@
+disabled_rules:
+  - force_cast
+  - function_body_length
+  - line_length
+  - nesting
+  - trailing_whitespace
+  - type_body_length
+  - variable_name
+opt_in_rules:
+  - empty_count
+included:
+  - LiveTeX
+excluded:
+  - Carthage
+  - LiveTeXTests
+  - LiveTeXUITests
